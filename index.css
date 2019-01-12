@@ -1,0 +1,46 @@
+
+body{
+    padding-left: 10%;
+    padding-right: 10%
+}
+
+img{
+    width: 200px;
+    height:200px;
+    border-radius: 150px;
+}
+
+#pic{
+    display: flex;
+    justify-content: center;
+    padding-top: 10%
+}
+
+h1{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    margin-top: 1em;
+}
+
+nav{
+    display:flex;
+    justify-content: center
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    width:100%
+}
+
+.link{
+    width: 5em;
+    display: flex;
+}
+
+#description{
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%
+}
