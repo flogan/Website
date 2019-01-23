@@ -4,32 +4,35 @@
     <head>
         <title>Forrest Logan</title>
         <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
     </head>
-    
+    <script src="index.js"></script>   
     <body>
+        
+        <div id= "main">
         <div id = "pic">
         <img src="me.jpg">
         </div>
         <h1> Forrest Logan </h1>
         <nav id = "links">
             <ul>
-                <li class = "link">Professional</li>
-                <li class= "link">Projects</li>
-                <li class= "link">Personal</li>
-                <li class= "link"><a href="https://github.com/flogan" target="_blank">Github</a></li>
-                <li class= "link"><a href="www.linkedin.com/in/forrest-logan" target="_blank">Linkedin</a></li>
-                <li class= "link"><a href="mailto:flogan.logan808@gmail.com">Contact</a></li>
+                <li class = "link"><button onclick=toggle("professional")>Professional</button></li>
+                <li class= "link"><button onclick=toggle("projects")>Projects</button></li>
+                <li class= "link"><button onclick=toggle("personal")>Personal</button></li>
+                <li class= "link"><button> <a href="https://github.com/flogan" target="_blank">Github</a></button></li>
+                <li class= "link"><button> <a href="www.linkedin.com/in/forrest-logan" target="_blank">Linkedin</a></button></li>
+                <li class= "link"><button> <a href="mailto:flogan.logan808@gmail.com">Contact</a></button></li>
             </ul>
         </nav>
 
-        <p id = "description">
+        <p class = "tab" id = "description">
             I am a senior computer science student at UMass Amherst on the 
             search for a start to my software development carrer. With the possibilities
             of tech becoming increasingly endless, I am excited to make my mark in 
             the field.
         </p>
 
-        <section id="professional">
+        <section class="tab" id="professional">
             <h2>Professional</h2>
             <p>
                 I am actively pursuing a start to a software development/engineering 
@@ -62,7 +65,7 @@
             </div>
         </section>
 
-        <section id = "projects">
+        <section class = "tab" id = "projects">
             <h2>Projects</h2>
             Some projects where I am trying to learn, exercise my skills, or make something cool.
             <h3>In the works</h3>
@@ -94,9 +97,16 @@
             <h3>For school</h3>
         </section>
 
-        <section id="personal">
+        <section class="tab" id="personal">
             <h2>Personal</h2>
             <p>Personal life, coming soon!</p>
         </section>
+    </div>
+    <div id ="left">
+
+        </div>
+        <div id="right">
+            
+        </div>
     </body>
 </html>
