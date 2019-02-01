@@ -10,4 +10,5 @@ for (i = 0; i < tabs.length; i++) {
 console.log("here now")
 txt.style.display = "block";
 console.log(txt)
+
 }

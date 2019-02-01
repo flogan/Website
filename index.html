@@ -3,27 +3,32 @@
 <html>
     <head>
         <title>Forrest Logan</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
     </head>
     <script src="index.js"></script>   
     <body>
-        
+        <div id="header">
+            <div id = "brand" onclick="location.href='http://forrestlogan.com'">
+                <img  id = "logo"  src="images/logo2.png">
+                <p id = "name">Forrest Logan</p>
+            </div>
+            <nav id = "links">
+                <button class="btn" onclick="toggle('professional')"><i class="fas fa-pen-nib"></i> Professional</button>
+                <button class="btn" onclick="toggle('projects')"><i class="fas fa-code"></i> Projects</button>
+                <button class="btn" onclick="toggle('personal')"><i class="fas fa-user-alt"></i> Personal</button>
+                <button class="btn" onclick="window.open('https://github.com/flogan', '_blank')"><i class="fab fa-github"></i> Github</button>
+                <button class="btn" onclick="window.open('https://linkedin.com/in/forrest-logan', '_blank')"><i class="fab fa-github"></i> Linkedin</button>
+                <button class="btn" onclick="window.open('mailto:flogan.logan808@gmail.com')"><i class="fas fa-envelope"></i> Contact</button>
+            </nav>
+        </div>
         <div id= "main">
         <div id = "pic">
-        <img src="me.jpg">
+        <img id = "avatar" src="images/me.jpg">
         </div>
-        <h1> Forrest Logan </h1>
-        <nav id = "links">
-            <ul>
-                <li class = "link"><button onclick=toggle("professional")>Professional</button></li>
-                <li class= "link"><button onclick=toggle("projects")>Projects</button></li>
-                <li class= "link"><button onclick=toggle("personal")>Personal</button></li>
-                <li class= "link"><button> <a href="https://github.com/flogan" target="_blank">Github</a></button></li>
-                <li class= "link"><button> <a href="www.linkedin.com/in/forrest-logan" target="_blank">Linkedin</a></button></li>
-                <li class= "link"><button> <a href="mailto:flogan.logan808@gmail.com">Contact</a></button></li>
-            </ul>
-        </nav>
+        
 
         <p class = "tab" id = "description">
             I am a senior computer science student at UMass Amherst on the 
@@ -102,11 +107,5 @@
             <p>Personal life, coming soon!</p>
         </section>
     </div>
-    <div id ="left">
-
-        </div>
-        <div id="right">
-            
-        </div>
     </body>
 </html>
