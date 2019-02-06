@@ -1,2 +1,2 @@
 # Website
-Public code for mwy personal website
+Public code for my personal website
