@@ -5,107 +5,119 @@
         <title>Forrest Logan</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.googleapis.com/css?family=Exo|Palanquin|Rokkitt" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="index.js"></script> 
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
     </head>
-    <script src="index.js"></script>   
+    
     <body>
-        <div id="header">
-            <div id = "brand" onclick="location.href='http://forrestlogan.com'">
+        <!-- <div id="header">
+            <div id = "brand" onclick="onhome('landing')">
                 <img  id = "logo"  src="images/logo2.png">
-                <p id = "name">Forrest Logan</p>
+                <h1 id="name">Forrest Logan</h1>
             </div>
             <nav id = "links">
                 <button class="btn" onclick="toggle('professional')"><i class="fas fa-pen-nib"></i> Professional</button>
                 <button class="btn" onclick="toggle('projects')"><i class="fas fa-code"></i> Projects</button>
-                <button class="btn" onclick="toggle('personal')"><i class="fas fa-user-alt"></i> Personal</button>
-                <button class="btn" onclick="window.open('https://github.com/flogan', '_blank')"><i class="fab fa-github"></i> Github</button>
-                <button class="btn" onclick="window.open('https://linkedin.com/in/forrest-logan', '_blank')"><i class="fab fa-github"></i> Linkedin</button>
-                <button class="btn" onclick="window.open('mailto:flogan.logan808@gmail.com')"><i class="fas fa-envelope"></i> Contact</button>
+                <button class="btn" onclick="toggle('personal')"><i class="fas fa-user-alt"></i> About Me</button>
+                <button class="btn" title="My Github profile" onclick="window.open('https://github.com/flogan', '_blank')"><i class="fab fa-github"></i> Github</button>
+                <button class="btn" title="My LinkedIn profile" onclick="window.open('https://linkedin.com/in/forrest-logan', '_blank')"><i class="fab fa-github"></i> Linkedin</button>
+                <button class="btn" title="mailto:flogan.logan808@gmail.com" onclick="window.open('mailto:flogan.logan808@gmail.com')"><i class="fas fa-envelope"></i> Contact</button>
             </nav>
+        </div> -->
+        <div class= "wrapper">
+            <div id="landing" class="parallax">
+                <div><img id = "logo" src="images/logo2.png"></div>
+                <h1 id="htitle">Forrest Logan</h1>
+                <h4 id="hsub">Coding && Ultimate</h4>
+                <div id="hometabs">
+                    <a class="hbtn" href = "#personal"><i class="fas fa-user-alt"></i> About Me</a>
+                    <a class="hbtn" href = "#professional"><i class="fas fa-pen-nib"></i> Professional</a>
+                    <a class="hbtn" href = "#projects"><i class="fas fa-code"></i> Projects</a>
+                </div>
+            </div>
         </div>
-        <div id= "main">
-        <div id = "pic">
-        <img id = "avatar" src="images/me.jpg">
-        </div>
-        
-
-        <p class = "tab" id = "description">
-            I am a senior computer science student at UMass Amherst on the 
-            search for a start to my software development carrer. With the possibilities
-            of tech becoming increasingly endless, I am excited to make my mark in 
-            the field.
-        </p>
-
-        <section class="tab" id="professional">
-            <h2>Professional</h2>
-            <p>
-                I am actively pursuing a start to a software development/engineering 
-                career. As a second semester senior at UMass, I am highly anticipating my next step.
-            </p>
-            <a href="">Resume</a>
-            <div>
-                <h3>Data Analyst at Office of Waste Management</h3>
-                <p> At the Office of Waste Management of UMass, a campus of 
-                    over 25,000, we produce a lot of refuse - and a lot of data. 
-                    It is my duty to gather, scrub, and maintain data stores of collection
-                    truck weights and locations. I use this data with different technologies
-                    like ArcGIS and excel to perfrom different analysies to better inform, and improve, the 
-                    campus' sustainability efforts. 
+        <nav id="sidecolumn">
+            <ul id= "sidenav">
+                    <li><a id = "am" class="hbtn" href = "#personal">About Me</a></li>
+                    <li id = "pf"><a  class="hbtn" href = "#professional">Professional</a></li>
+                    <li><a id = "pj" class="hbtn" href = "#projects">Projects</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section class="tab" id="personal">
+                <h2>Personal</h2>
+                <p>I am a senior computer science student at UMass Amherst on the 
+                        search for a start to my software development carrer. With the possibilities
+                        of tech becoming increasingly endless, I am excited to make my mark in 
+                        the field.</p>
+                <p>Personal life, coming soon!</p>
+            </section>
+            <section class="tab" id="professional">
+                <h2>Professional</h2>
+                <p>
+                    I am actively pursuing a start to a software development/engineering 
+                    career. As a second semester senior at UMass, I am highly anticipating my next step.
                 </p>
-            </div>
-            <div>
-                <h3>Academic</h3>
-                <p>I currently attend UMass Amherst pursuing a Bachelors if Science in Computer Science with a graduation date in May 2019.
-                </p>
-                <ul> Relevant Courses
-                    <li>Data Structures</li>
-                    <li>Algorithms</li>
-                    <li>Software Engineering</li>
-                    <li>Search Engines</li>
-                    <li>Programming Principles</li>
-                    <li>Machine Learning</li>
-                    <li>Networks</li>
-                </ul>
-            </div>
-        </section>
+                <a href="">Resume</a>
+                <div>
+                    <h3>Data Analyst at Office of Waste Management</h3>
+                    <p> At the Office of Waste Management of UMass, a campus of 
+                        over 25,000, we produce a lot of refuse - and a lot of data. 
+                        It is my duty to gather, scrub, and maintain data stores of collection
+                        truck weights and locations. I use this data with different technologies
+                        like ArcGIS and excel to perfrom different analysies to better inform, and improve, the 
+                        campus' sustainability efforts. 
+                    </p>
+                </div>
+                <div>
+                    <h3>Academic</h3>
+                    <p>I currently attend UMass Amherst pursuing a Bachelors if Science in Computer Science with a graduation date in May 2019.
+                    </p>
+                    <ul> Relevant Courses
+                        <li>Data Structures</li>
+                        <li>Algorithms</li>
+                        <li>Software Engineering</li>
+                        <li>Search Engines</li>
+                        <li>Programming Principles</li>
+                        <li>Machine Learning</li>
+                        <li>Networks</li>
+                    </ul>
+                </div>
+            </section>
 
-        <section class = "tab" id = "projects">
-            <h2>Projects</h2>
-            Some projects where I am trying to learn, exercise my skills, or make something cool.
-            <h3>In the works</h3>
-            <div>
-                <h4>This Website</h4>
-                <p>Using my personal website to practice my web development skills and make a customized space to showcase my abilities.</p>
-                <a href="https://github.com/flogan/Website">Github Repository</a>
-            </div>
-            <h3>Ideas</h3>
-            <div>
-                <h4>Professional Breeder Book Keeping</h4>
-                <p>My mom breeds standard poodles for a living and is an entrepreneur turning it into a full business. However, none of her files 
-                    are digital, and there is a lot of paperwork that comes with the feild. There are contracts signed with the sale of a puppy, vet records,
-                    microchip numbers, pedigrees, etc. Whenever my mother needs a piece of information that isn't readily available she has to flip through massive
-                    binders to locate a document. The idea here would be to digitize records and scan documents to be able to search by dog or customer to 
-                    quickly obtain records, created connections between dogs like parents and breeding offspring to quickly access important information.
-                </p>
-            </div>
+            <section class = "tab" id = "projects">
+                <h2>Projects</h2>
+                Some projects where I am trying to learn, exercise my skills, or make something cool.
+                <h3>In the works</h3>
+                <div>
+                    <h3>This Website</h3>
+                    <p>Using my personal website to practice my web development skills and make a customized space to showcase my abilities.</p>
+                    <a href="https://github.com/flogan/Website" target="_blank">Github Repository</a>
+                </div>
+                <h3>Ideas</h3>
+                <div>
+                    <h3>Professional Breeder Book Keeping</h3>
+                    <p>My mom breeds standard poodles for a living and is an entrepreneur turning it into a full business. However, none of her files 
+                        are digital, and there is a lot of paperwork that comes with the field. There are contracts signed with the sale of a puppy, vet records,
+                        microchip numbers, pedigrees, etc. Whenever my mother needs a piece of information that isn't readily available she has to flip through massive
+                        binders to locate a document. The idea here would be to digitize records and scan documents to be able to search by dog or customer to 
+                        quickly obtain records, created connections between dogs like parents and breeding offspring to quickly access important information.
+                    </p>
+                </div>
 
-            <div>
-                <h4>Is This Recyclable? App</h4>
-                <p>The idea would be to create an app for UMass students which utilizes AI and image recognition to tell users if an image they take of 
-                    a piece of waste is either recyclable, compostable or must be put in the trash at UMass. This idea came from trying to increase 
-                    recycling participation after seeing the recycling rate numbers.
-                </p>
-            </div>
+                <div>
+                    <h3>Is This Recyclable? App</h3>
+                    <p>The idea would be to create an app for UMass students which utilizes AI and image recognition to tell users if an image they take of 
+                        a piece of waste is either recyclable, compostable or must be put in the trash at UMass. This idea came from trying to increase 
+                        recycling participation after seeing the recycling rate numbers.
+                    </p>
+                </div>
 
-            <p>If you have any tips or ideas on where to start or some technologies to use with these, or want to help contribute, feel free to <a href="flogan.logan808@gmail.com">contact me</a></p>
-            <h3>For school</h3>
-        </section>
-
-        <section class="tab" id="personal">
-            <h2>Personal</h2>
-            <p>Personal life, coming soon!</p>
-        </section>
-    </div>
+                <p>If you have any tips or ideas on where to start or some technologies to use with these, or want to help contribute, feel free to <a href="flogan.logan808@gmail.com">contact me</a></p>
+                <h3>For school</h3>
+            </section>
+        </main>
     </body>
-</html>
+</html> 
